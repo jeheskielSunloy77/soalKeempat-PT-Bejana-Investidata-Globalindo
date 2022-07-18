@@ -1,8 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Stack 
+- Next.js
+- Tailwindcss
+- PostgreSQL on Supabase
 
-## Getting Started
+## Konfigurasi Database
+- Buat File .env.local seperti contoh dibawah
+NEXT_PUBLIC_SUPABASE_URL= URL SUPABASE DISNI
+NEXT_PUBLIC_SUPABASE_KEY= PUBLIC KEY SUPABSE DISINI
 
-First, run the development server:
+## Mulai
 
 ```bash
 npm run dev
