@@ -5,6 +5,9 @@ import ButtonSiswa from "../components/ButtonSiswa"
 import Card from "../components/Card"
 import Main from "../components/Main"
 import { AppContext } from "../utils/AppContext"
+
+// silahkan baca file readme untuk informasi configurasi database, dan kunjugi link pada halaman github unutk melihat demo website
+
 export default function Home() {
   const { setPage } = useContext(AppContext)
 
