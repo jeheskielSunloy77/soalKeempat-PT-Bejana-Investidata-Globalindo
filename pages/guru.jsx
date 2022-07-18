@@ -35,16 +35,16 @@ export default function guru({ students }) {
 
   function StudentList() {
     return (
-      <table class='w-full text-sm text-left text-gray-500 dark:text-gray-400 mb-4'>
-        <thead class='text-xs text-gray-700 uppercase bg-white dark:bg-gray-700 dark:text-gray-400'>
+      <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400 mb-4'>
+        <thead className='text-xs text-gray-700 uppercase bg-white dark:bg-gray-700 dark:text-gray-400'>
           <tr>
-            <th scope='col' class='py-3 px-6'>
+            <th scope='col' className='py-3 px-6'>
               No
             </th>
-            <th scope='col' class='py-3 px-6'>
+            <th scope='col' className='py-3 px-6'>
               Nama Siswa
             </th>
-            <th scope='col' class='py-3 px-6'>
+            <th scope='col' className='py-3 px-6'>
               Nilai
             </th>
           </tr>
@@ -52,10 +52,10 @@ export default function guru({ students }) {
         <tbody>
           {students.map(({ nama_siswa, nilai_siswa }, index) => {
             return (
-              <tr class='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600'>
-                <td class='py-4 px-6'>{index + 1}</td>
-                <td class='py-4 px-6'> {nama_siswa}</td>
-                <td class='py-4 px-6'>{nilai_siswa || "Data Belum Ada"}</td>
+              <tr className='bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600'>
+                <td className='py-4 px-6'>{index + 1}</td>
+                <td className='py-4 px-6'> {nama_siswa}</td>
+                <td className='py-4 px-6'>{nilai_siswa || "Data Belum Ada"}</td>
               </tr>
             )
           })}
@@ -67,10 +67,10 @@ export default function guru({ students }) {
   function GradeInput() {
     return (
       <form onSubmit={handleSubmit(gradeInput)}>
-        <div class='mb-6'>
+        <div className='mb-6'>
           <label
             for='nama'
-            class='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
+            className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
           >
             Nama Siswa
           </label>
@@ -78,13 +78,13 @@ export default function guru({ students }) {
             {...register("nama_siswa")}
             type='text'
             id='nama'
-            class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+            className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
           />
         </div>
-        <div class='mb-6'>
+        <div className='mb-6'>
           <label
             for='kelas'
-            class='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
+            className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'
           >
             Nilai Siswa
           </label>
@@ -92,7 +92,7 @@ export default function guru({ students }) {
             {...register("nilai_siswa")}
             type='text'
             id='kelas'
-            class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+            className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
           />
         </div>
         <Button text='Input Nilai' type='submit' />
