@@ -5,6 +5,8 @@
 
 ## Konfigurasi Database
 - Buat File .env.local seperti contoh dibawah
+
+
 NEXT_PUBLIC_SUPABASE_URL= URL SUPABASE DISNI 
 
 NEXT_PUBLIC_SUPABASE_KEY= PUBLIC KEY SUPABSE DISINI
